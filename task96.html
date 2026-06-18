@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            padding:20px;
+        }
+
+        input{
+            padding:10px;
+            margin:5px;
+        }
+
+        button{
+            padding:10px;
+            cursor:pointer;
+        }
+
+        table{
+            width:100%;
+            margin-top:20px;
+            border-collapse:collapse;
+        }
+
+        th,td{
+            border:1px solid black;
+            padding:10px;
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Inventory Management System</h2>
+
+<input type="text" id="name" placeholder="Product Name">
+
+<input type="number" id="quantity" placeholder="Quantity">
+
+<button onclick="addProduct()">
+Add Product
+</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody id="productTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
